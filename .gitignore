@@ -1,0 +1,69 @@
+# ---------------------------
+# PYTHON
+# ---------------------------
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# ---------------------------
+# AIRFLOW SPECIFIC
+# ---------------------------
+# Airflow logs (generate automatically)
+airflow_project/logs/
+logs/
+
+# Airflow SQLite DB (local only)
+airflow.db
+airflow.sqlite
+unittests.cfg
+
+# Airflow dags processor temp files
+airflow_project/dag_processor_manager/
+
+# Airflow scheduler metadata
+airflow_project/scheduler/
+
+# Airflow worker temp files
+airflow_project/worker/
+
+# ---------------------------
+# DOCKER
+# ---------------------------
+# Docker build artifacts
+*.pid
+*.log
+*.tmp
+tmp/
+*.swp
+
+# Ignore container volumes
+volumes/
+
+# ---------------------------
+# ENVIRONMENT / SECRETS
+# ---------------------------
+.env
+*.env
+.env.*
+
+# ---------------------------
+# EDITOR / OS TRASH FILES
+# ---------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
